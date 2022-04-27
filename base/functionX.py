@@ -1,8 +1,8 @@
 import pandas as pd
 
 def testt(q):
-    newStr = __file__.replace('functionX.py','SGVN.xlsx')
-    dfz = pd.read_excel(newStr)
+    newStr = __file__.replace('functionX.py','test.csv')
+    dfz = pd.read_csv(newStr)
     detail = dfz[dfz.SN  == q].detail
     for de in detail:
         return de
